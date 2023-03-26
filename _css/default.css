@@ -51,8 +51,10 @@ html {
     }
     h2 {
         font-size: 1.75rem;
-        font-weight: 500;
+        font-weight: bold;
         line-height: 1.2;
+        text-align: center;
+        color: var(--black);
     }
     img {
         width: 100%;
