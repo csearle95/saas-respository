@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: var(--size-20);
+}
+
+.header-logo {
+    width: var(--size-150) 
+}
+
+nav {
+    width: 450px;
+}
+
+.nav .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
