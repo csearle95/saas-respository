@@ -11,9 +11,11 @@ header {
 main {
     z-index: 200;
     background-color: var(--white);
-    position: absolute;
-    padding: 0 var(--size-20);
     width: 100%;
+}
+
+main section {
+    margin-bottom: var(--size-50);
 }
 
 .header-logo {
@@ -36,17 +38,38 @@ nav {
     gap: var(--size-20);
 }
 
-.btn-primary {
+.btn {
+    display: flex;
     border: 1px solid transparent;
     border-radius: 50px;
     background-color: var(--blue);
     padding: var(--size-10);
     width: var(--size-100);
     text-align: center;
+    justify-content: center;
+}
+
+.btn a {
+    color: var(--white);
+}
+
+.btn-primary {
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: var(--blue);
+    padding: var(--size-10);
+    width: var(--size-100);
+    text-align: center;
+    justify-content: space-between;
 }
 
 .btn-primary a {
     color: var(--white);
+    font-size: var(--size-10);
+}
+.btn-primary .fa-sold a {
+    font-size: var(--size-8);
 }
 
 .hero-container {
@@ -64,27 +87,12 @@ nav {
     font-weight: 500;
 }
 
-.header-slant {
-    height: var(--size-150);
-    margin-top: 30px;
-    width: 130%;
-    rotate: -5deg;
-    z-index: 25;
-    background-color: var(--white);
-    top: 400px;
-    position: absolute;
-}
+.hero-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--size-30);
 
-.header-slant-dark {
-    height: 100%;
-    margin-top: var(--size-100);
-    width: 100%;
-    rotate: -68deg;
-    z-index: 20;
-    background-color: var(--contrast-2);
-    top: 0px;
-    position: absolute;
-    left: 750px;
 }
 
 .icon-grid {
@@ -97,22 +105,22 @@ nav {
 #googleA {
     grid-row: 4;
     grid-column: 3;
-  }
+}
 
 #asana { 
     grid-row: 1;
     grid-column: 5;
- }
+}
 
 #atlassian { 
     grid-row: 1;
     grid-column: 3;
- }
+}
 
 #calendar { 
     grid-row: 4;
     grid-column: 5;
- }
+}
 
 #google { 
     grid-row: 1;
@@ -121,11 +129,11 @@ nav {
 #paypal { 
     grid-row: 3;
     grid-column: 2;
- }
+}
 #weave { 
     grid-row: 3;
     grid-column: 4;
- }
+}
 
 .icon-grid-cell {
     width: var(--size-50);
@@ -140,14 +148,155 @@ nav {
     width: var(--size-50);
 }
 
+.key-benefits {
+    padding: var(--size-20);
+}
+
 .key-benefits p {
     text-align: center;
+    margin-bottom: var(--size-30);
 }
 
 .key-benefits-cards {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-40);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    gap: var(--size-10);
+    padding: var(--size-30);
+}
+
+.card img {
+    width: var(--size-50);
+}
+
+.card p {
+    text-align: left;
+    font-size: var(--size-14);
+}
+
+.software-container {
+    background-color: var(--contrast-1);
+    display: flex;
+    flex-direction: row;
+    height: 470px;
+    align-items: center;
+}
+
+.software-container .hero-btn-container {
+    width: 100%;
+}
+
+.software-thumbnail {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.why-front-container {
+    text-align: center;
+} 
+
+.hero-text h2 {
+    text-align: left;
+}
+
+.bubbles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: var(--size-10);
+    margin-top: var(--size-50);
+}
+
+.bubble-labels-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bubble {
+    width: var(--size-50);
+    height: var(--size-50);
+    background-color: var(--font-color-light);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bubble-inner {
+    width: var(--size-10);
+    height: var(--size-10);
+    background-color: var(--font-color-base);
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.line {
+    background-color: var(--font-color-base);
+    height: 1px;
+    width: 70%;
+    margin-top: 25px
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-thumbnail {
+    background-image: url("../_assetts/banners/banner_two.jpg");
+    height: 421px; 
+    display: flex;
+    align-items: center;
+}
+
+.play-video {
+    display: block;
+    margin: 0px auto;
+    color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+}
+
+.hubspot-profile {
+    display: flex;
+    gap: var(--size-50);
+    margin-bottom: var(--size-50);
+}
+
+.profile-photo {
+    padding: 0 0 var(--size-50) var(--size-10);
+    background-image: url("../_assetts/abstract/dots.svg");
 
 }
 
-.key-benefits-cards .card {
-
+.profile-text {
+    font-size: 22px;
+    padding-top: var(--size-100);
 }
+
+.profile-text img {
+    width: var(--size-100);
+}
+
+.why-front h2 {
+    margin-bottom: var(--size-20);
+}
+
+.worlds-best h2 {
+    margin-bottom: var(--size-100);
+}
+
+.worlds-best-logos {
+    display: flex;
+    gap: var(--size-100);
+}
+

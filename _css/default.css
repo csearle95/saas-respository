@@ -22,7 +22,7 @@
     --size-50: 3.125rem;
     --size-100: 6.25rem;
     --size-150: 9.375rem;
-    --size-150: 18.75rem;
+    --size-300: 18.75rem;
 }
 
 html {
@@ -37,6 +37,13 @@ html {
         color: var(--font-color-base);
         margin: 0;
         padding: 0;
+        background-color: var(--white);
+    }
+    .site-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--size-30);
+        overflow: hidden;
     }
     *,
     ::after,
@@ -45,6 +52,7 @@ html {
     }
     a {
         text-decoration: none;
+        color: var(--blue);
     }
     p {
         margin-top: 0;
@@ -99,6 +107,8 @@ html {
         transition: ease-in-out 0.3s;
         color: var(--white);
         padding: 0.4375rem 1.5623rem;
+        text-align: center;
+        align-items: center;
 
     }
     .btn-secondary {
@@ -118,6 +128,6 @@ html {
         footer .container { max-width: 960px; }
     }
 
-    @media (min-width: 1200px){
-        .container { max-width: 1024px; }
-}
+    /*@media (min-width: 1200px){
+        .container { max-width: 1024px; } 
+}*/
