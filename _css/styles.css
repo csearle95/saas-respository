@@ -18,8 +18,12 @@ main section {
     margin-bottom: var(--size-50);
 }
 
-section p {
-    text-align: center;
+input {
+    height: var(--size-50);
+}
+
+select {
+    height: var(--size-50);
 }
 
 .header-logo {
@@ -207,6 +211,10 @@ nav {
     text-align: center;
 } 
 
+.hero-text p {
+    text-align: left;
+}
+
 .hero-text h2 {
     text-align: left;
 }
@@ -316,26 +324,95 @@ nav {
 .pricing-cards-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: var(--size-50);
+
 }
 
 .pricing-main-card {
     width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 68px 40px;
 }
+
+.pricing-main-card .btn-primary {
+    margin-bottom: var(--size-20);
+}
+
 .pricing-main-card h3 {
     font-size: var(--size-50);
+}
+
+.pricing-main-card p {
+    text-align: left;
+}
+
+.pricing-main-card span {
+    font-size: var(--size-20);
+    color: var(--font-color-light);
 }
 
 .pricing-small-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 263px) ;
-    grid-template-rows: repeat(2 , 241px)
+    grid-template-rows: repeat(2 , 241px);
 }
 
-.pricing-small-card {
+.pricing-small-card p{
     text-align: left;
+
 }
 
 .pricing-small-card img {
     width: 42px
+}
+
+.hire-us {
+    background-color: var(--hire-us-bg);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    padding: var(--size-20);
+}
+
+.hire-us-text h2 {
+    text-align: left;
+    color: var(--white);
+}
+
+.hire-us-text p {
+    color: var(--font-color-base);
+}
+
+.hire-us-text .line {
+    text-align: left;
+    background-color: var(--white);
+    float: left;
+    width: var(--size-150);
+}
+
+.hire-us-form-container {
+    background-color: var(--white);
+    border-radius: var(--size-10);
+    padding: var(--size-10);
+}
+
+.hire-us-form-container h3 {
+    color: var(--font-color-base);
+}
+
+.hire-us-form {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: var(--size-10);
+}
+.hire-us-form textarea {
+    grid-column:  1 / span 2 ;
+}
+
+.btn-primary-form {
+    margin: 0 auto;
 }
 
