@@ -18,6 +18,10 @@ main section {
     margin-bottom: var(--size-50);
 }
 
+section p {
+    text-align: center;
+}
+
 .header-logo {
     width: var(--size-150); 
 }
@@ -283,8 +287,17 @@ nav {
     padding-top: var(--size-100);
 }
 
+.profile-text p {
+    text-align: left;
+    margin-bottom: var(--size-20);
+}
+
 .profile-text img {
     width: var(--size-100);
+}
+
+.profile-name h3{
+    margin: 0;
 }
 
 .why-front h2 {
@@ -298,5 +311,31 @@ nav {
 .worlds-best-logos {
     display: flex;
     gap: var(--size-100);
+}
+
+.pricing-cards-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing-main-card {
+    width: 40%;
+}
+.pricing-main-card h3 {
+    font-size: var(--size-50);
+}
+
+.pricing-small-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 263px) ;
+    grid-template-rows: repeat(2 , 241px)
+}
+
+.pricing-small-card {
+    text-align: left;
+}
+
+.pricing-small-card img {
+    width: 42px
 }
 
