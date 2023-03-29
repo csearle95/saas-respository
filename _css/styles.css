@@ -76,7 +76,7 @@ nav {
     padding: var(--size-10);
     width: var(--size-100);
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .btn-primary a {
@@ -176,7 +176,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: var(--size-40);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .card {
@@ -276,8 +276,20 @@ nav {
 }
 
 .video-thumbnail {
-    background-image: url("../_assetts/banners/banner_two.jpg");
     height: 421px; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.video-thumbnail img {
+    position: relative;
+}
+
+.video-thumbnail .play-video {
+    position: absolute;
+    z-index: 3;
     display: flex;
     align-items: center;
 }
@@ -289,6 +301,7 @@ nav {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 100%;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .hubspot-profile {
@@ -511,7 +524,19 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--size-30);
+    gap: var(--size-20);
     
+}
+
+.footer-main-col-container {
+    width: 33%;
+    font-size: var(--size-14);
+}
+
+.footer-small-col-container {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-col {

@@ -202,9 +202,43 @@
         margin-top: var(--size-20);
     }
 
+    .btn-primary {
+        width: var(--size-150);
+    }
+
+    .btn-primary a {
+        font-size: var(--size-12);
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     
+    .card {
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .bubbles-container {
+        flex-direction: column;
+        gap: var(--size-12);
+    }
+
+    .bubble-labels-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .bubble {
+        margin-right: var(--size-40);
+    }
     
 }
