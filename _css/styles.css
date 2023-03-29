@@ -294,8 +294,20 @@ nav {
 
 .profile-photo {
     padding: 0 0 var(--size-50) var(--size-10);
-    background-image: url("../_assetts/abstract/dots.svg");
+    position: relative;
+    overflow: hidden;
+}
 
+#woman {
+    z-index: 3;
+    position: relative;
+}
+
+#dots {
+    top: var(--size-100);
+    left: 0px;
+    position: absolute;
+    width: 75%;
 }
 
 .profile-text {
