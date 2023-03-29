@@ -23,10 +23,176 @@
         margin-right: var(--size-20);
 
     }
+
+    main {
+        padding: var(--size-20);
+    }
+
+    .site-container { 
+       width: 100%;
+       padding: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-50);
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text p {
+        text-align: center;
+    }
+
+    .hero-btn-container {
+        justify-content: center;
+    }
+
+    .key-benefits-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 46%;
+    }
+
+    .software-container {
+        flex-direction: column;
+        gap: var(--size-50);
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        text-align: center;
+        font-size: var(--size-20);
+        font-weight: 400;
+    }
+    
+    .hero-text p {
+        display: none;
+    }
+
+    .hubspot-profile {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        padding: var(--size-150);
+    }
+
+    #dots {
+        width: 50%;
+        height: 70%;
+        top: var(--size-300);
+        left: var(--size-50);
+    }
+
+    .profile-text {
+        padding-top: 0;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: var(--size-50);
+    }
+
+    .profile-text p {
+        font-weight: 500;
+        padding: 0 var(--size-50);
+        text-align: center;
+    }
+
+    .profile-text img {
+        margin: 0;
+    }
+
+    .profile-name h4 {
+        margin-top: 0;
+        color: var(--font-color-light);
+    }
+
+    .pricing-cards-container { 
+        flex-direction: column;
+        padding: 0 var(--size-20)
+    }
+
+    .pricing-main-card {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .pricing-main-card h3 {
+        margin: var(--size-20) 0;
+    }
+    .pricing-main-card .btn-primary {
+        margin: 0 auto;
+        margin-bottom: var(--size-50);
+    }
+
+    .pricing-main-card p {
+        text-align: center;
+        margin-bottom: var(--size-20);
+    }
+
+    .pricing-main-card .line {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: var(--size-20);
+    }
+
+    .pricing-small-cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-template-rows: repeat(2 , 241px);
+        align-items: center;
+        justify-content: space-between;
+        margin-top: var(--size-20);
+    }
+
+    .hire-us {
+        flex-direction: column;
+        padding: 0 -20px;
+    }
+
+    .hire-us-form-container {
+        width: 100%;
+    }
+
+    footer {
+        padding: var(--size-20);
+    }
+
+    .footer-col-container {
+        justify-content: space-around;
+    }
+
+    .footer-col h3 {
+        margin-bottom: 0;
+    }
+
+    .footer-small-col-container .footer-col {
+        width: 50%;
+    }
+
+    .footer-small-col-container {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-
     
     
 }
