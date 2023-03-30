@@ -190,10 +190,6 @@
         flex-wrap: wrap;
     }
 
-    .footer-breadcrumbs {
-        align-items: center;
-    }
-
     .footer-breadcrumbs p{
         display: inline-block;
     }
