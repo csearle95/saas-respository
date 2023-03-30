@@ -18,10 +18,13 @@
     <body>
         <div class="site-container">
             <header class="top-section">
-                <nav class="nav nav-bar">
+                <nav id ="topNav" class="nav nav-bar">
                     <div class="header-logo">
                         <img src="_assetts/project_logo/logo.svg">
                     </div>
+                    <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+                    <span>&#9776;</span>
+                    </button>
                     <ul class="nav-bar">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Features</a></li>
@@ -675,7 +678,7 @@
                 </div>
             </footer>          
         </div>
-        <!--<script>
+        <script>
             const nav = document.getElementById("topNav");
             window.onscroll = function () {
                 if (window.pageYOffset > 100) {
@@ -692,6 +695,6 @@
                 }
     
                 navButton.addEventListener('click', toggleNav);
-            </script>-->
+            </script>
     </body>
 </html>
